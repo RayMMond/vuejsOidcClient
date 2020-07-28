@@ -4,11 +4,12 @@ import 'babel-polyfill';
 
 var mgr = new Oidc.UserManager({
   userStore: new Oidc.WebStorageStateStore(),  
-  authority: 'https://localhost:44321',
-  client_id: 'vuejsclient',
+  authority: 'https://localhost:44372',
+  client_id: 'Spa_Code',
+  client_secret: '1q2w3e*',
   redirect_uri: window.location.origin + '/static/callback.html',
-  response_type: 'id_token token',
-  scope: 'openid profile address roles identityserver4api country subscriptionlevel offline_access',
+  response_type: 'code', //'id_token token',
+  scope: 'openid profile address role ScanOrder offline_access',
   post_logout_redirect_uri: window.location.origin + '/index.html',
   silent_redirect_uri: window.location.origin + '/static/silent-renew.html',
   accessTokenExpiringNotificationTime: 10,

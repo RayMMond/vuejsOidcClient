@@ -3,7 +3,7 @@ import axios from 'axios'
 import Mgr from './SecurityService'
 import 'babel-polyfill';
 
-const baseUrl = 'https://localhost:44390/api/';
+const baseUrl = 'https://localhost:44372/api/';
 var user = new Mgr()
 
 export default class ApiService {

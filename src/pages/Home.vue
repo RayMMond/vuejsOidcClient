@@ -21,7 +21,7 @@
                 </a>
               </h6>
               <li class="nav-item">
-                <a class="nav-link" @click="getAll('values')" href="#">
+                <a class="nav-link" @click="getAll('abp/api-definition')" href="#">
                   GetAll
                 </a>
               </li>
